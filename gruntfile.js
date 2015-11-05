@@ -25,15 +25,6 @@ module.exports = function (grunt) {
       adapter: {
         configFile: 'karma.conf.js'
       }
-    },
-    eslint: {
-      target: [
-        'src/adapter.js',
-        'lib/*.js',
-        'test/*.js',
-        'gruntfile.js',
-        'karma.conf.js'
-      ]
     }
   })
 
@@ -41,7 +32,7 @@ module.exports = function (grunt) {
   grunt.loadTasks('tasks')
 
   grunt.registerTask('test', ['karma'])
-  grunt.registerTask('default', ['eslint', 'test'])
+  grunt.registerTask('default', ['test'])
 
   grunt.registerTask('release', 'Bump the version and publish to NPM.', function (type) {
     grunt.task.run([

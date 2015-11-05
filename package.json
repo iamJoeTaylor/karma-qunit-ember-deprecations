@@ -1,7 +1,7 @@
 {
-  "name": "karma-qunit",
-  "version": "0.1.7",
-  "description": "A Karma plugin. Adapter for QUnit testing framework.",
+  "name": "karma-qunit-ember-deprecations",
+  "version": "1.0.0",
+  "description": "A Karma plugin. Adapter for QUnit testing framework with Ember.",
   "main": "lib/index.js",
   "scripts": {
     "test": "grunt"
@@ -14,19 +14,17 @@
     "karma",
     "karma-plugin",
     "karma-adapter",
-    "qunit"
+    "qunit",
+    "Ember"
   ],
   "files": [
     "lib"
   ],
-  "author": "Vojta Jina <vojta.jina@gmail.com>",
+  "author": "Joe Taylor <iamjoetaylor@gmail.com>",
   "dependencies": {},
   "devDependencies": {
-    "eslint": "^0.24.1",
-    "eslint-config-standard": "^3.4.1",
     "grunt": "^0.4.5",
     "grunt-bump": "^0.3.1",
-    "grunt-eslint": "^16.0.0",
     "grunt-karma": "^0.12.0",
     "grunt-npm": "0.0.2",
     "jasmine-core": "^2.3.4",
@@ -42,6 +40,7 @@
   },
   "license": "MIT",
   "contributors": [
+    "Joe Taylor <iamjoetaylor@gmail.com>",
     "Matt DuVall <matt@stripe.com>",
     "dignifiedquire <dignifiedquire@gmail.com>",
     "Friedel Ziegelmayer <dignifiedquire@gmail.com>",
